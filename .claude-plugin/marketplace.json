@@ -1,16 +1,21 @@
 {
   "$schema": "https://claude.ai/schemas/marketplace.json",
-  "name": "Runtime Debugging",
+  "name": "runtime-debugging",
   "description": "Hypothesis-driven debugging with real-time log tracing for Claude Code",
-  "author": "originalix",
+  "owner": {
+    "name": "originalix",
+    "url": "https://github.com/originalix"
+  },
   "homepage": "https://github.com/originalix/runtime-debugging",
   "plugins": [
     {
-      "id": "runtime-debugging",
-      "name": "Runtime Debugging",
+      "name": "runtime-debugging",
       "description": "Debug runtime issues systematically with hypothesis generation, strategic instrumentation, and real-time log analysis. Inspired by Cursor's debug mode.",
       "version": "1.0.0",
-      "path": "."
+      "source": {
+        "type": "local",
+        "path": "."
+      }
     }
   ]
 }
