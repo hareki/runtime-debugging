@@ -1,0 +1,25 @@
+{
+  "$schema": "https://claude.ai/schemas/plugin.json",
+  "name": "runtime-debugging",
+  "displayName": "Runtime Debugging",
+  "description": "Hypothesis-driven debugging with real-time log tracing. Systematically debug runtime issues by generating hypotheses, strategically instrumenting code, and analyzing logs to identify root causes.",
+  "version": "1.0.0",
+  "author": "originalix",
+  "homepage": "https://github.com/originalix/runtime-debugging",
+  "license": "MIT",
+  "keywords": [
+    "debugging",
+    "runtime",
+    "logging",
+    "hypothesis",
+    "trace",
+    "instrumentation"
+  ],
+  "skills": [
+    {
+      "path": "skills/skill.md",
+      "name": "runtime-debugging",
+      "description": "Debug runtime issues with hypothesis-driven approach"
+    }
+  ]
+}

@@ -75,10 +75,10 @@ I'll instrument the code to test these hypotheses. Which ones would you like me 
 
 ```bash
 # Local mode (default) - for browser, iOS Simulator
-SKILL_DIR="$HOME/.claude/skills/runtime-debugging/scripts"; [ ! -d "$SKILL_DIR" ] && SKILL_DIR="${PWD}/.claude/skills/runtime-debugging/scripts"; "$SKILL_DIR/start-server.sh"
+SCRIPT_DIR="$HOME/.claude/plugins/installed/runtime-debugging/scripts"; [ ! -d "$SCRIPT_DIR" ] && SCRIPT_DIR="$HOME/.claude/skills/runtime-debugging/scripts"; [ ! -d "$SCRIPT_DIR" ] && SCRIPT_DIR="${PWD}/.claude/skills/runtime-debugging/scripts"; "$SCRIPT_DIR/start-server.sh"
 
 # LAN mode - only for Android Emulator or real devices
-SKILL_DIR="$HOME/.claude/skills/runtime-debugging/scripts"; [ ! -d "$SKILL_DIR" ] && SKILL_DIR="${PWD}/.claude/skills/runtime-debugging/scripts"; "$SKILL_DIR/start-server.sh" --lan
+SCRIPT_DIR="$HOME/.claude/plugins/installed/runtime-debugging/scripts"; [ ! -d "$SCRIPT_DIR" ] && SCRIPT_DIR="$HOME/.claude/skills/runtime-debugging/scripts"; [ ! -d "$SCRIPT_DIR" ] && SCRIPT_DIR="${PWD}/.claude/skills/runtime-debugging/scripts"; "$SCRIPT_DIR/start-server.sh" --lan
 ```
 
 **Default behavior**: If the user doesn't mention Android Emulator or real device, use local mode (`127.0.0.1`).
