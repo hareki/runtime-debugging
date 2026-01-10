@@ -17,13 +17,23 @@ Traditional debugging with `console.log` is chaotic. You scatter logs everywhere
 
 ### 1. Install
 
-**Global (recommended):**
+**Option A: Claude Code Plugin (Recommended)**
+
 ```bash
-git clone https://github.com/originalix/runtime-debugging.git ~/.claude/skills/runtime-debugging
+# Add the marketplace
+claude plugin marketplace add originalix/runtime-debugging
+
+# Install the plugin
+claude plugin install runtime-debugging@originalix-runtime-debugging
 ```
 
-**Project-level:**
+**Option B: Manual Installation**
+
 ```bash
+# Global (recommended)
+git clone https://github.com/originalix/runtime-debugging.git ~/.claude/skills/runtime-debugging
+
+# Or project-level
 git clone https://github.com/originalix/runtime-debugging.git .claude/skills/runtime-debugging
 ```
 
