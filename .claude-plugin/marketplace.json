@@ -1,8 +1,8 @@
 {
-  "name": "originalix-runtime-debugging",
+  "name": "hareki-runtime-debugging",
   "description": "Hypothesis-driven debugging with real-time log tracing for Claude Code",
   "owner": {
-    "name": "originalix"
+    "name": "hareki"
   },
   "plugins": [
     {
@@ -11,7 +11,7 @@
       "version": "1.0.0",
       "source": "./",
       "author": {
-        "name": "originalix"
+        "name": "hareki"
       }
     }
   ]
